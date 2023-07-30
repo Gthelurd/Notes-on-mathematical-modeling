@@ -1,0 +1,13 @@
+clc;clear;
+f=[-20,-30,-40];
+ a=[4,8,10;1,1,1];
+ b=[100;20];
+ itcon=[1:1:3];
+ [x,fval]=intlinprog(f,itcon,a,b,[],[],zeros(3,1));
+ [x1,fval1]=linprog(f,a,b,[],[],zeros(3,1));
+ disp('线性规划(LP):')
+ disp(x1)
+ disp(fval1)
+ disp('整数规划(ILP):')
+ disp(x)
+ disp(fval)
