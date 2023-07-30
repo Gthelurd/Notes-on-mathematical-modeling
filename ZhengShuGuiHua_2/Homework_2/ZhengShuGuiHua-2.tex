@@ -1,0 +1,71 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{amsmath,amssymb,epsf,epsfig,times}
+\usepackage{multicol}
+\usepackage[all]{xy}
+\usepackage{color}
+\usepackage{ctex}
+\usepackage{subfigure}
+\usepackage{url,cite}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{pdfpages}
+
+%\usepackage{caption}
+%
+%\usepackage[font=small,labelfont=bf,labelsep=none]{caption}
+\usepackage[font=default,labelfont=bf,labelsep=period]{caption}
+
+\usepackage{makecell}
+\usepackage{booktabs} %引入三线表
+\usepackage{diagbox}
+\usepackage{multirow}
+
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{ulem}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\usepackage{enumerate}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textbf{MATLAB数学建模算法及实例分析}第二章习题答案}
+\lhead{魔力铠甲}
+\rfoot{Page \thepage}
+\begin{document}
+\section{整数规划}
+\begin{itemize}
+    \item[1] 设四个班次的人员分别有$x_1,x_2,x_3,x_4$人，那么可以知道:
+    \\我们直接列出一个时间表:\begin{table}[H]
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            时间 & 8-12 & 10-12 & 12-14 \\ 
+            \hline
+            人数 & $x_1+x_2$ & $x_1+x_2$ &$x_1+x_3+x_4\text{或}x_2+x_3+x_4$ \\
+            \hline
+            时间 & 14-16 &16-18 &18-21\\
+            \hline
+            人数 &$x_1+x_2+x_3+x_4$  & $x_1+x_2+x_4\text{或}x_3$ & $x_3+x_4$ \\
+            \hline
+        \end{tabular}
+    \end{table}
+    那么结合这个可以列出目标函数与约束条件:
+    \par \noindent  目标函数 $\min y = 800x_1 + 800x_2+900x_3+900x_4$
+    \\约束条件
+    s.t.$\left\{\begin{matrix}
+        x_1+x_2 \geqslant  20\\
+        x_1+x_2 \geqslant  25\\
+        x_1+x_3+x_4 \geqslant  10\\
+        x_2+x_3+x_4 \geqslant  10\\
+        x_1+x_2+x_3+x_4 \geqslant  30\\
+        x_3 \geqslant 20\\
+        x_1+x_2+x_4 \geqslant  20\\
+        x_3+x_4 \geqslant  10\\
+    \end{matrix}\right.$
+    \\联合求解可以得出:$x_1+x_2=25,x_3=20,x_4=0$
+    \\此时目标函数$\min Z=38000$
+\end{itemize}
+\end{document}
