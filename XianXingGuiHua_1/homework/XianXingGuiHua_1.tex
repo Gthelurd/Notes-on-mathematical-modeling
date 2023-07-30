@@ -1,0 +1,142 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{amsmath,amssymb,epsf,epsfig,times}
+\usepackage{multicol}
+\usepackage[all]{xy}
+\usepackage{color}
+\usepackage{ctex}
+\usepackage{subfigure}
+\usepackage{url,cite}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{pdfpages}
+
+%\usepackage{caption}
+%
+%\usepackage[font=small,labelfont=bf,labelsep=none]{caption}
+\usepackage[font=default,labelfont=bf,labelsep=period]{caption}
+
+\usepackage{makecell}
+\usepackage{booktabs} %引入三线表
+\usepackage{diagbox}
+\usepackage{multirow}
+
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{ulem}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\usepackage{enumerate}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textbf{MATLAB数学建模算法及实例分析}第一章习题答案}
+\lhead{魔力铠甲}
+\rfoot{Page \thepage}
+\begin{document}
+\section{线性规划}
+\begin{itemize}
+    \item[1] 令$y=\min(\sum_{i=1}^{m}a_{i1}x_i,\sum_{i=1}^{m}a_{i2}x_i,\cdots,\sum_{i=1}^{m}a_{in}x_i)$,则问题可化为:
+    \\$\max Z=y$ 
+    \\s.t.$ \left\{\begin{matrix}
+        \sum_{i=1}^{m}x_i=1\\
+        x_i\geq 0,(i=1,2,\cdots,m)\\
+        y \leq \sum_{i=1}^{m}a_{ij}x_i,(j=1,2,\cdots,n)\\
+    \end{matrix}\right.$
+    \item[2] 令$x_i=\frac{u_i-v_i}{2},|x_i|=\frac{u_i+v_i}{2},$则原问题可化为:
+    \\$\max Z=\sum_{j=1}^{n}c_{j}(\frac{u_i+v_i}{2})$
+    \\s.t.$\left\{
+        \begin{matrix}
+            \sum_{j=1}^{n}a_{ij}(\frac{u_i-v_i}{2})=b_i&(i=1,2,\cdots,m)\\
+            u_i\geq 0\\
+            v_i\geq 0\\
+        \end{matrix}
+    \right.$
+        \item[3] 令$|y_i-(a+bx_i)|=\frac{u_i+v_i}{2},(y_i-(a+bx_i))=\frac{u_i-v_i}{2}$,则原问题可化为：
+        \\$\min \left\{ \sum_{i=1}^{n}\frac{u_i+v_i}{2} \right\}$
+        \\s.t.$\left\{\begin{matrix}
+            \frac{u_i-v_i}{2}=y_i-(a+bx_i)&(i=1,\cdots,n)\\
+            u_i,v_i\geq 0\\
+        \end{matrix}\right.$
+
+        \item[4] 简单分析：对产品I来说，设以$A_1,A_2$完成A工序产品分别为$x_1,x_2$件，转入B工序时，以$B_1,B_2,B_3$完成B工序的产品分别为$x_3,x_4,x_5$件；
+        对于产品II来说，设以$A_1,A_2$完成A工序的产品分别为$x_6,x_7$件，转入B工序时，以$B_1$完成B工序的产品为$x_8$件；
+        对于产品III来说，设以$A_2$完成A工序的产品为$x_9$件，则以$B_2$完成B工序的产品也为$x_9$件。由上述条件可得$$x_1+x_2=x_3+x_4+x_5,x_6+x_7=x_8$$.
+        由题目所给的数据可建立如下的线性规划模型:
+        \begin{align*}
+            \max Z = (1.25-0.25)(x_1+x_2)+(2-0.35)x_8+(2.8-0.5)x_9
+                   \\- \frac{300}{6000}(5x_1+10x_6)-\frac{321}{10000}(7x_2+9x_7+12x_9)
+                   \\- \frac{250}{4000}(6x_3+8x_8) -\frac{783}{7000}(4x_4+11x_9)-\frac{200}{4000}\times 7x_5    
+        \end{align*}
+        \\s.t.$\left\{\begin{matrix}
+            5x_1+10x_6\leq 6000,\\
+            7x_2+9x_7+12x_9\leq 10000,\\
+            6x_3+8x_8\leq 4000,\\
+            4x_4+11x_9\leq 7000,\\
+            7x_5\leq 4000,\\
+            x_1+x_2=x_3+x_4+x_5,\\
+            x_6+x_7=x_8,\\
+            x_i\geq 0,i=1,2,\cdots,9\\
+        \end{matrix}\right.$
+        \\又结合实际，可以知道这个取值都为整数，对应最优解为:
+        \begin{align*}
+            x_1=1200,x_2=230,x_3=0,x_4=895,\\
+            x_5=571,x_6=0,x_7=500,x_8=500,x_9=324.
+        \end{align*}
+        \\最优值为$z=1146.4142$元
+        
+    
+       \item[5] 指派问题，可化为问题采用匈牙利算法：
+     \\$\min Z =\Sigma_{i=1}^{4}c_{ij}x_{ij}$
+     \\s.t.$\left\{ \begin{matrix}
+        \Sigma_{i}x_{ij}=1,j=1,2,\cdots,n\\
+        \Sigma_{j}x_{ij}=1,i=1,2,\cdots,n\\
+        x_{ij}=1\mbox{或}0\\
+    \end{matrix} \right.$
+            \\ 可以容易求出最后的整数解(此最优解不唯一，另一解留给读者证明):
+            \\ $x_{ij}=\begin{bmatrix}
+                0	&1&	0	&0\\
+1	&0	&0	&0\\
+0	&0	&1	&0\\
+0	&0	&0	&1\\
+             \end{bmatrix}
+$
+
+\item[6]用$i=1,2$分别代表重型和轻型炸弹,$j=1,2,3,4$分别代表四个要害部位，$x_{ij}$代表投到第j要害的i种炸弹的数量，则此问题的数学模型为:\\
+    
+    
+$\min Z =(1-0.10)^{x_{11}}(1-0.20)^{x_{12}}(1-0.15)^{x_{13}}(1-0.25)^{x_{14}}
+(1-0.08)^{x_{21}}
+(1-0.16)^{x_{22}}(1-0.12)^{x_{23}}(1-0.20)^{x_{24}}$
+s.t.$$\left\{\begin{matrix}
+    \frac{1.5 \times 450}{2}x_{11}+\frac{1.5 \ times 480}{2}x_{12}+\frac{1.5 \times 540}{2}x_{13}+\frac{1.5 \times 600}{2}x_{14}+\\\frac{1.75 \times 450}{3}x_{21}+\frac{1.75 \times 480}{3}x_{22}+\frac{2 \times 540}{3}x_{23}+\frac{2 \times 600}{3}x_{24}+\\100(x_{11}+x_{12}+x_{13}+x_{14}+x_{21}+x_{22}+x_{23}+x_{24})\leq 48000\\
+    x_{11}+x_{12}+x_{13}+x_{14} \leq 32\\
+    x_{21}+x_{22}+x_{23}+x_{24} \leq 48\\
+    x_{ij}\geq 0 \qquad i=1,2;j=1,\cdots,4\\
+\end{matrix}\right.$$
+虽然目标函数非线性，但是$\min Z$可用$\max \lg{\frac{1}{Z}}$,因此目标函数变成
+\\$\max Z =0.0457x_{11}+0.0969x_{12}+0.0704x_{13}+0.1248x_{14}+0.0362x_{21}+\\0.0656x_{22}+0.0554x_{23}+0.0969x_{24}$
+\item[7]直接给解：$x_1 =
+4.0000
+,x_2=1.0000
+,x_3=9.0000
+\\Z=2.0000$
+\item[8]直接给解：$
+x_1=0.25,x_2=0,x_3=0,x_4=-0.25;
+\\Z =1.2500$
+\item[9]分别给出决策变量:用$i=1,2,3,4$分别表示货物1，货物2，货物3和货物4；$j=1,2,3$分别表示前舱，中舱和后舱。设$x_{ij}(i=1,2,3,4;j=1,2,3)$表示第i种货物装载第j个货舱内的重量，$w_j,v_j(j=1,2,3)$分别表示第j个舱的重量限制和体积限制，$a_i,b_i,c_i(i=1,2,3,4)$分别表示可以运输的第i种货物的重量，单位重量所占的空间和单位货物的利润,则
+\par (1).目标函数为\par $\max Z=c_1\sum\limits_{j=1}^3x_{1j}+c_2\sum\limits_{j=1}^3x_{2j}+c_3\sum\limits_{j=1}^3x_{3j}+c_4\sum\limits_{j=1}^3x_{4j}\\=\sum\limits_{i=1}^4\sum\limits_{j=1}^3c_ix_{ij}$
+\par (2).约束条件为\par s.t.$\left\{\begin{matrix}
+    \sum\limits_{j=1}^3x_{ij}\leq a_i,i=1,2,3,4\\
+    \sum\limits_{i=1}^4x_{ij}\leq w_j,j=1,2,3\\
+    \sum\limits_{i=1}^4b_ix_{ij}\leq v_i,j=1,2,3\\
+    \frac{\sum\limits_{i=1}^4x_i1}{10}=\frac{\sum\limits_{i=1}^4x_i2}{16}=\frac{\sum\limits_{i=1}^4x_i3}{8}\\
+\end{matrix}\right.$
+\\最终有解：$x =
+4.48353476103949e-13      \qquad    14.9999999999999      \qquad    15.9473684210523      \\ \qquad   3.05263157894734
+\\y =121515.789473684$
+
+\end{itemize}
+\end{document}
