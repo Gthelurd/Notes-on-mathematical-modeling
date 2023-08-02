@@ -8,9 +8,9 @@
    仅供学习交流,严禁用于商业用途。
  ## 目录
  1. [Chapter 1: 线性规划](./matlab/算法大全_第01章__线性规划.pdf)
-2. [Chapter 2: 整数规划](./matlab/算法大全_第02章__整数规划.pdf)
+2. [Chapter 2: 整数规划](./matlab/算法大全_第02章_整数规划.pdf)
 3. [Chapter 3:非线性规划](./matlab/算法大全_第03章__非线性规划.pdf)
-4. [Chapter 4:动态规划](./matlab/算法大全——第04章——动态规划.pdf)
+4. [Chapter 4:动态规划](./matlab/算法大全_第04章__动态规划.pdf)
  ## Contributing
  If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions, suggestions, and improvements are always welcome!
  ## 致谢
