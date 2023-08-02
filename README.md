@@ -10,6 +10,7 @@
  1. [Chapter 1: 线性规划](./matlab/算法大全_第01章__线性规划.pdf)
 2. [Chapter 2: 整数规划](./matlab/算法大全_第02章__整数规划.pdf)
 3. [Chapter 3:非线性规划](./matlab/算法大全_第03章__非线性规划.pdf)
+4. [Chapter 4:动态规划](./matlab/算法大全——第04章——动态规划.pdf)
  ## Contributing
  If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions, suggestions, and improvements are always welcome!
  ## 致谢
@@ -18,4 +19,5 @@
    1.2023/7/23 正式开始写第一章，从线性规划入手，感觉好难，看不太懂(┬┬﹏┬┬)。<br>
    2.2023/7/25 写完第一章啦，答案不确定对不对，尤其是第4题。<br>
    3.2023/7/30 第二章写完啦，这章只有一道练习题，好耶☆*: .｡. o(≧▽≦)o .｡.:*☆。<br>
-   4.2023/7/31 第三章在写了在写了
+   4.2023/7/31 第三章在写了在写了。(￣▽￣)"<br>
+   5.2023/8/2  传了第三章，最后一道题结果不太确定；第四章加急制作中ヾ(•ω•`)o。
