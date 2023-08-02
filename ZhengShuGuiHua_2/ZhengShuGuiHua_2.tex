@@ -196,35 +196,35 @@
 请问玩家该如何组合使今天获得的经验值最大?
 \par \small{解：}
 \begin{table}[H]
-        
+
     \caption{模型假设}
     \centering
     \begin{tabular}{ c l }
-    \hline
-    决策变量 & 实际意义 \\
-    \hline
-    $x_1$ & A图通关次数\\
-    \hline
-    $x_2$ & B图通关次数\\
-    \hline
-    $x_3$ & C图通关次数\\
-    \hline
+        \hline
+        决策变量 & 实际意义    \\
+        \hline
+        $x_1$    & A图通关次数 \\
+        \hline
+        $x_2$    & B图通关次数 \\
+        \hline
+        $x_3$    & C图通关次数 \\
+        \hline
     \end{tabular}
 \end{table}
 我们可以简单取出  \par   \fbox{%
-\parbox{\textwidth}{%
-  \begin{center}
-    
-        目标函数 $\max y = 20x_1 + 30x_2+40x_3$
-        \\同时给出约束条件
-        \\s.t.$\left\{\begin{matrix}
-            4x_1+8x_2+10x_3 \leqslant  100\\
-            x_1+x_2+x_3 \leqslant  20\\
-            x_1,x_2,x_3 \geqslant  0\\
-        \end{matrix}\right.$
+    \parbox{\textwidth}{%
+        \begin{center}
+
+            目标函数 $\max y = 20x_1 + 30x_2+40x_3$
+            \\同时给出约束条件
+            \\s.t.$\left\{\begin{matrix}
+                    4x_1+8x_2+10x_3 \leqslant  100 \\
+                    x_1+x_2+x_3 \leqslant  20      \\
+                    x_1,x_2,x_3 \geqslant  0       \\
+                \end{matrix}\right.$
         \end{center}
-  
-}%
+
+    }%
 }
 然后就可以简单地画个图如下。
 \begin{figure}[H]
@@ -233,49 +233,49 @@
     \caption{约束条件}
 \end{figure}
 \par \noindent \large \textcolor{blue}{给出matlab调用函数intLinprog函数的解法的模型化：}
-    \par Matlab给出了求解线性规划的matlab标准型：\textbf{目标函数最小值、约束条件小于等于号或者等号。}\\倘若求最大值或约束条件有大于等于，可以添加-号使不等式变号。
-    \\ 整数规划代码： $\left[  x,fval  \right]$ = intlinprog($f$,itcon,$A$,$b$,$Aeq$,$beq$,$lb$,$ub$,$x_0$)
-    \par 其中，$f,x,b,beq,lb$和 $ub$ 是向量，$A$ 和$ Aeq$ 是矩阵。更加详细一点:
-    \\$f$为目标函数的系数列向量
+
+\par \noindent 整数规划代码： $\left[  x,fval  \right]$ = intlinprog($f$,itcon,$A$,$b$,$Aeq$,$beq$,$lb$,$ub$,$x_0$)
+\par 其中，$f,x,b,beq,lb$和 $ub$ 是向量，$A$ 和$ Aeq$ 是矩阵。更加详细一点:
+\\$f$为目标函数的系数列向量
     \\intcon是标明哪些变量是整数变量
     \\ $A,b$为不等式约束条件的变量系数矩阵和常数项矩阵
     \\$Aeq,beq$为等式约束条件的稀疏矩阵和常数项矩阵
-    \\$lb,ub$为决策变量的最小取值和最大取值
+\\$lb,ub$为决策变量的最小取值和最大取值
     \\$x_0$表示初始可行点，从这里开始优化
-    \subsection{0-1规划matlab标准型}
-    对于 0-1 规划问题，MATLAB 提供命令 bintprog 求解。 MATLAB 中 0-1 规划的标准形
+\subsection{0-1规划matlab标准型}
+对于 0-1 规划问题，MATLAB 提供命令 bintprog 求解。 MATLAB 中 0-1 规划的标准形
 式为：
 \\$\min f'*X$
-\par \noindent s.t.$\left\{\begin{matrix}
-    A*X <= b,\\
-Aeq*X = beq,
+    \par \noindent s.t.$\left\{\begin{matrix}
+    A*X <= b, \\
+    Aeq*X = beq,
 \end{matrix} \right.$
-\\其中 X 的每个分量为 0 或者 1。
-\\(1)X = BINTPROG(f) 求解问题 $\min f'*X$
-\\(2)X = BINTPROG(f,A,b) 求解 $\min f'*X s.t. A*X <= b$
-\\(3)X = BINTPROG(f,A,b,Aeq,beq)求解 $\min f'*X s.t. Aeq*X = beq, A*X <= b$
-\section{线性规划-适用题目}
+    \\其中 X 的每个分量为 0 或者 1。
+    \\(1)X = BINTPROG(f) 求解问题 $\min f'*X$
+    \\(2)X = BINTPROG(f,A,b) 求解 $\min f'*X s.t. A*X <= b$
+    \\(3)X = BINTPROG(f,A,b,Aeq,beq)求解 $\min f'*X s.t. Aeq*X = beq, A*X <= b$
+    \section{线性规划-适用题目}
 
-\subsection{线性规划适用的赛题：} 
-在规划题目中，有些最优解可能是分数或小数，但是对于某些问题，有些或全部变量必须是整数，比如机器的台数，工作的人数或者装配的货物等等。这个时候就需要整数规划。
-\\\textcolor{blue}{这个情况下无特定算法，只能近似模拟。}matlab只能求解0-1规划，对于其他整数规划也只能求出近似解，且没有相应的对应函数。
-\begin{itemize}
-    \item[·\textcolor{blue}{背包问题}] 设有一个背包，其最大承重为$ b$ ，考虑 $n $件物品，其中第 $j$ 件重量为 $a_j$ ，其价值为 $c_j$ 。问如何选取物品装入背包中，使得背包内物品的总价值最大？
-    \item[·\textcolor{blue}{广义指派问题}] 设有 $m$ 台机器， $n$ 个工件，第 $i$ 台机器的可用工时数为 $b_i$ ，第 $i$ 台机器完成第 $j$ 件工件需要的工时数为 $a_{ij} $，费用为$ c_{ij} $。问如何最优指派机器生产。
-    \item[·\textcolor{blue}{集合覆盖}] 设某地区划分为若干个区域，需要建立若干个应急服务中心（如消防站，急救中心等），每个中心的建立都需要一笔建站费用，设候选中心的位置已知，每个中心可以服务的区域预先知道，问如何选取中心使得应急服务能覆盖整个地区且使得建站费用最小。
-\end{itemize}
-\subsection{手写模型：}
-1.~分枝定界法：不考虑整数类型变量，先对该松弛问题求解:
-\\若该松弛问题无解，那么ILP问题一定无解。
-\\若该松弛问题最优解符合整数条件，那么这个解一定是ILP问题最优解。
-\\若不满足整数条件，那么可以任选一个不是整数的变量$x_i^0$来作为起始优化点，构造新的约束条件,$x_i \leq \left[x_i^0\right];x_i\geq \left[x_i^0\right]+1 $ ,添加到该松弛问题中形成两个子问题( $x_i$向下取整or向上取整作为上下界，添加约束)
-\\依次在缩小的可行域中求解新构造的线性规划的最优解，并重复上述过程，直到子问题无解或有整数最优解。
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=340pt,height=270pt]{figure3.png}
-    \caption{分支定界法图解}
-\end{figure}
-这个就是分支定界法的大概操作算法流程。从图中可以看到 初始化阶段 我们需要给定输出的 全局的上界 $\bar{z}$ 和下界 $\underline{z}$ ，如果能有一些启发式的方法获得稍微好点的上下界作为初始解导入那是最好的不过的了。如果没有的话可以先设置为正负无穷大。
+    \subsection{线性规划适用的赛题：}
+    在规划题目中，有些最优解可能是分数或小数，但是对于某些问题，有些或全部变量必须是整数，比如机器的台数，工作的人数或者装配的货物等等。这个时候就需要整数规划。
+    \\\textcolor{blue}{这个情况下无特定算法，只能近似模拟。}matlab只能求解0-1规划，对于其他整数规划也只能求出近似解，且没有相应的对应函数。
+    \begin{itemize}
+        \item[·\textcolor{blue}{背包问题}] 设有一个背包，其最大承重为$ b$ ，考虑 $n $件物品，其中第 $j$ 件重量为 $a_j$ ，其价值为 $c_j$ 。问如何选取物品装入背包中，使得背包内物品的总价值最大？
+        \item[·\textcolor{blue}{广义指派问题}] 设有 $m$ 台机器， $n$ 个工件，第 $i$ 台机器的可用工时数为 $b_i$ ，第 $i$ 台机器完成第 $j$ 件工件需要的工时数为 $a_{ij} $，费用为$ c_{ij} $。问如何最优指派机器生产。
+        \item[·\textcolor{blue}{集合覆盖}] 设某地区划分为若干个区域，需要建立若干个应急服务中心（如消防站，急救中心等），每个中心的建立都需要一笔建站费用，设候选中心的位置已知，每个中心可以服务的区域预先知道，问如何选取中心使得应急服务能覆盖整个地区且使得建站费用最小。
+    \end{itemize}
+    \subsection{手写模型：}
+    1.~分枝定界法：不考虑整数类型变量，先对该松弛问题求解:
+    \\若该松弛问题无解，那么ILP问题一定无解。
+    \\若该松弛问题最优解符合整数条件，那么这个解一定是ILP问题最优解。
+    \\若不满足整数条件，那么可以任选一个不是整数的变量$x_i^0$来作为起始优化点，构造新的约束条件,$x_i \leq \left[x_i^0\right];x_i\geq \left[x_i^0\right]+1 $ ,添加到该松弛问题中形成两个子问题( $x_i$向下取整or向上取整作为上下界，添加约束)
+    \\依次在缩小的可行域中求解新构造的线性规划的最优解，并重复上述过程，直到子问题无解或有整数最优解。
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=340pt,height=270pt]{figure3.png}
+        \caption{分支定界法图解}
+    \end{figure}
+    这个就是分支定界法的大概操作算法流程。从图中可以看到 初始化阶段 我们需要给定输出的 全局的上界 $\bar{z}$ 和下界 $\underline{z}$ ，如果能有一些启发式的方法获得稍微好点的上下界作为初始解导入那是最好的不过的了。如果没有的话可以先设置为正负无穷大。
 
 接着进入到主循环中，我们通过求解整数规划的连续松弛问题（线性规划）来得到该子问题的上界。在主循环中，剩余的操作其实就是依据我们上一节所讲的四种情况来分别进行，即 Pruned by optimality，Pruned by bound，No pruning possible, Pruned by infeasibility，对于情况1,2,4我们需要提前跳出循环完成剪枝的过程。如果情况1,2,4都不满足的话，就会一直运行到最后一步 return two subproblems 因为没有剪枝，所以需要把两个子节点都添加进来。
 \\2.~割平面法：同上，
@@ -293,7 +293,7 @@ Aeq*X = beq,
 \\4.~过滤隐枚举法：简单来说，就是穷举，但是要根据约束条件判断符合条件来减少运算量。
 \section{整数规划-代码实现}
 \par 贴出matlab代码求解,请结合前面的式子来分别对应整数变量
-    \begin{center}
+\begin{center}
     \begin{lstlisting}[caption={INP},language=Matlab]
         % IntLinear Programming(ILP)
         clc;clear;
@@ -310,62 +310,60 @@ Aeq*X = beq,
         disp(x)
         disp(fval)
         \end{lstlisting}
-    \end{center}
-    \section{整数规划-实战演练}
-    国赛的难度基本上都可以说成是国家自然科学基金子课题全国征求意见稿了，你还搁这指整数规划能解决呢。欸，别急，还真可以，大多数国赛题都会有0-1规划，但是这玩意没有固定的算法，所以还是自己去找国赛题去看吧。
-    \\记得去看我发的算法大全第二章，这波保底进度到这，里面题我做完发出来答案（虽然不保证正确），
-    这章只将整数规划，结束，收工。
+\end{center}
+\section{整数规划-实战演练}
+国赛的难度基本上都可以说成是国家自然科学基金子课题全国征求意见稿了，你还搁这指整数规划能解决呢。欸，别急，还真可以，大多数国赛题都会有0-1规划，但是这玩意没有固定的算法，所以还是自己去找国赛题去看吧。
+这章只讲整数规划，结束，收工。
 
 
 
-    \newpage
-\begin{thebibliography}{99}  
-
+\newpage
+\begin{thebibliography}{99}
     \bibitem{ref1}谢中华. MATLAB与数学建模[A].北京航空航天大学出版社[M]:科学技术协会,2021-02-14.
     \bibitem{ref2}21尔伊. 【数学建模学习】整数规划（MATLAB）[M]:2021-07-13.
     \bibitem{ref3}mathworks. 非线性规划问题求解器[J]:\url{https://ww2.mathworks.cn/help/optim/ug/linprog.html#description}
-    % \bibitem{ref2}陈香敏,魏伟,吴莹. “文化+人工智能”视阈下文化创意产业融合发展实践及路径研究[A]. 中共沈阳市委、沈阳市人民政府.第十七届沈阳科学学术年会论文集[C].中共沈阳市委、沈阳市人民政府:沈阳市科学技术协会,2020:4.
+    \bibitem{ref4}mathwprks. 整数规划intLinprog求解器[J]:\url{https://ww2.mathworks.cn/help/optim/ug/intlinprog.html}
     % \bibitem{ref3}田晓曦,刘振鹏,彭宝权. 地方高校开展教育人工智能深度融合的路径探究[A]. 中共沈阳市委、沈阳市人民政府.第十七届沈阳科学学术年会论文集[C].中共沈阳市委、沈阳市人民政府:沈阳市科学技术协会,2020:5.
     % \bibitem{ref4}柏卓君,潘勇,李仲余.彩色多普勒超声在早期胚胎停育诊断中的应用[J].影像研究与医学应用,2020,4(18):129-131.
     % \bibitem{ref5}杨芸.我院2018年人血白蛋白临床应用调查与分析[J].上海医药,2020,41(17):34-35+74.
-    
-    \end{thebibliography}
 
-    \newpage
-    \section{数学建模算法大全第二章习题答案}
+\end{thebibliography}
+
+\newpage
+\section{数学建模算法大全第二章习题答案}
 \begin{itemize}
     \item[1]首先假设决策变量：四个班次的人数分别为$x_i(i=1,\cdots,4)$
     \\那么可以得出:\begin{table}[H]
         \begin{tabular}{|c|c|c|c|}
             \hline
-            时间 & 8-12 & 10-12 & 12-14 \\ 
+            时间              & 8-12      & 10-12             & 12-14                     \\
             \hline
-            人数 & $x_1+x_2$ & $x_1+x_2$ &$x_1+x_3+x_4,x_2+x_3+x_4$ \\
+            人数              & $x_1+x_2$ & $x_1+x_2$         & $x_1+x_3+x_4,x_2+x_3+x_4$ \\
             \hline
-            14-16 &  &16-18 &18-21\\
+            14-16             &           & 16-18             & 18-21                     \\
             \hline
-            $x_1+x_2+x_3+x_4$ & & $x_1+x_2+x_4,x_3$ & $x_3+x_4$ \\
+            $x_1+x_2+x_3+x_4$ &           & $x_1+x_2+x_4,x_3$ & $x_3+x_4$                 \\
             \hline
         \end{tabular}
     \end{table}
-    \par \noindent  
-    
-        目标函数 $\min y = 800x_1 + 800x_2+900x_3+900x_4$
-        \\同时给出约束条件
-        \\s.t.$\left\{\begin{matrix}
-            x_1+x_2 \geqslant  20\\
-            x_1+x_2 \geqslant  25\\
-            x_1+x_3+x_4 \geqslant  10\\
-            x_2+x_3+x_4 \geqslant  10\\
-            x_1+x_2+x_3+x_4 \geqslant  30\\
-            x_3 \geqslant 20\\
-            x_1+x_2+x_4 \geqslant  20\\
-            x_3+x_4 \geqslant  10\\
+    \par \noindent
+
+    目标函数 $\min y = 800x_1 + 800x_2+900x_3+900x_4$
+    \\同时给出约束条件
+    \\s.t.$\left\{\begin{matrix}
+            x_1+x_2 \geqslant  20         \\
+            x_1+x_2 \geqslant  25         \\
+            x_1+x_3+x_4 \geqslant  10     \\
+            x_2+x_3+x_4 \geqslant  10     \\
+            x_1+x_2+x_3+x_4 \geqslant  30 \\
+            x_3 \geqslant 20              \\
+            x_1+x_2+x_4 \geqslant  20     \\
+            x_3+x_4 \geqslant  10         \\
         \end{matrix}\right.$
-        
+
     \par \noindent 然后就可以给出结果$ x_1=0
-    ,x_2=25
-    ,x_3=20
-    ,x_4=0,\min Z=38000$
+        ,x_2=25
+        ,x_3=20
+        ,x_4=0,\min Z=38000$
 \end{itemize}
 \end{document}

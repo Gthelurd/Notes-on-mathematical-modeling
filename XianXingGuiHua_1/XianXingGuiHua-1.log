@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.21)  29 JUL 2023 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.21)  2 AUG 2023 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1029,61 +1029,61 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 38
  (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 ) [6]
-Underfull \hbox (badness 7576) in paragraph at lines 398--403
+Underfull \hbox (badness 7576) in paragraph at lines 397--402
 []\OT1/ptm/m/n/12 mathworks. \C70/rm/m/n/12/97 ^ \C70/rm/m/n/12/7e ø \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/89 ƒ \C70/rm/m/n/12/52 ^^R \C70/rm/m/n/12/95 Ó \C70/rm/m/n/12/98 ò \C70/rm/m/n/12/6c B \C70/rm/m/n/12/89 „ \C70/rm/m/n/12/56 h\OT1/ptm/m/n/12 [J]:$\OT1/pcr/m/n/12 https : / / ww2 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--403
+Underfull \hbox (badness 10000) in paragraph at lines 397--402
 \OT1/pcr/m/n/12 mathworks . cn / help / optim / ug / linprog . html #
  []
 
 [7]
-Overfull \hbox (95.53824pt too wide) in paragraph at lines 429--454
+Overfull \hbox (95.53824pt too wide) in paragraph at lines 428--453
 []\C70/rm/m/n/12/7b Ä \C70/rm/m/n/12/53 U \C70/rm/m/n/12/52 ^^F \C70/rm/m/n/12/67 ê|\C70/rm/m/n/12/ff ^^Z| \C70/rm/m/n/12/50 Z\OT1/ptm/m/n/12 I\C70/rm/m/n/12/7c { \C70/rm/m/n/12/4e ß \C70/rm/m/n/12/54 ¡ \C70/rm/m/n/12/51 q \C70/rm/m/n/12/67 	|\C70/rm/m/n/12/ff ^^Z| \OT1/ptm/m/n/12 ($\OML/cmm/m/it/12 A[]; B[]$\OT1/ptm/m/n/12 ),($\OML/cmm/m/it/12 A[]; B[]$\OT1/ptm/m/n/12 ),($\OML/cmm/m/it/12 A[]; B[]$\OT1/ptm/m/n/12 ),($\OML/cmm/m/it/12 A[]; B[]$\OT1/ptm/m/n/12 ),($\OML/cmm/m/it/12 A[]; B[]$\OT1/ptm/m/n/12 ),($\OML/cmm/m/it/12 A[]; B[]$\OT1/ptm/m/n/12 )\C70/rm/m/n/12/51 m
  []
 
 
-Overfull \hbox (10.09882pt too wide) in paragraph at lines 429--454
+Overfull \hbox (10.09882pt too wide) in paragraph at lines 428--453
 \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/74 ^^F \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/77 Â|\C70/rm/m/n/12/ff ^^L| \OT1/ptm/m/n/12 II\C70/rm/m/n/12/7c { \C70/rm/m/n/12/4e ß \C70/rm/m/n/12/54 ¡ \C70/rm/m/n/12/67 	$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]; B[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]; b[]\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/4e $ * \C70/rm/m/n/12/8d Ô \C70/rm/m/n/12/5f Ñ|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/52 ^^F + \C70/rm/m/n/12/8b æ \C70/rm/m/n/12/4e :$\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 =
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
 [9]
-Overfull \hbox (15.84976pt too wide) in paragraph at lines 480--483
+Overfull \hbox (15.84976pt too wide) in paragraph at lines 479--482
 [] \OML/cmm/m/it/12 Z \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0457\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0969\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0704\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1248\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0362\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 +
  []
 
 
-Overfull \hbox (21.2765pt too wide) in paragraph at lines 488--500
+Overfull \hbox (21.2765pt too wide) in paragraph at lines 487--499
 []\C70/rm/m/n/12/76 Ù \C70/rm/m/n/12/63 • \C70/rm/m/n/12/7e Ÿ \C70/rm/m/n/12/89 „|\C70/rm/m/n/12/ff ^^Z| $\OML/cmm/m/it/12 u[] \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 5000\OML/cmm/m/it/12 ; v[] \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0000\OML/cmm/m/it/12 ; u[] \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0000\OML/cmm/m/it/12 ; v[] \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0000\OML/cmm/m/it/12 ; u[] \OT1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (0.91327pt too wide) in paragraph at lines 501--502
+Overfull \hbox (0.91327pt too wide) in paragraph at lines 500--501
 \C70/rm/m/n/12/72 i\OT1/ptm/m/n/12 3\C70/rm/m/n/12/54 å \C70/rm/m/n/12/8d ' \C70/rm/m/n/12/72 i\OT1/ptm/m/n/12 4|\C70/rm/m/n/12/ff ^^[| $\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3$\C70/rm/m/n/12/52 ^^F + \C70/rm/m/n/12/88 h \C70/rm/m/n/12/79 : \C70/rm/m/n/12/52 M \C70/rm/m/n/12/82 1|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/4e - \C70/rm/m/n/12/82 1 \C70/rm/m/n/12/54 å ^^N \C70/rm/m/n/12/82 1|\C70/rm/m/n/12/30 ^^B| \C70/rm/m/n/12/8b æ$\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i \OT1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (109.97519pt too wide) in paragraph at lines 503--512
+Overfull \hbox (109.97519pt too wide) in paragraph at lines 502--511
 \C70/rm/m/n/12/67 ^^@ \C70/rm/m/n/12/7e » \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/89 „|\C70/rm/m/n/12/ff ^^Z| $\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 = 4\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 48353476103949\OML/cmm/m/it/12 e \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 13 14\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9999999999999 15\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9473684210523[] 
  []
 
 [10] [11] (./XianXingGuiHua-1.aux) ) 
 Here is how much of TeX's memory you used:
- 28166 strings out of 478268
- 504406 string characters out of 5847351
+ 28148 strings out of 478268
+ 504160 string characters out of 5847351
  989571 words of memory out of 5000000
- 45435 multiletter control sequences out of 15000+600000
+ 45417 multiletter control sequences out of 15000+600000
  556750 words of font info for 319 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,17n,91p,3281b,2022s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf>{d:/LATEX/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on XianXingGuiHua-1.pdf (11 pages, 750298 bytes).
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf>{d:/LATEX/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on XianXingGuiHua-1.pdf (11 pages, 748359 bytes).
 PDF statistics:
  686 PDF objects out of 1000 (max. 8388607)
  435 compressed objects within 5 object streams
