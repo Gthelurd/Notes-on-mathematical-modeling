@@ -11,6 +11,7 @@
 2. [Chapter 2: 整数规划](./matlab)
 3. [Chapter 3:非线性规划](./matlab)
 4. [Chapter 4:动态规划](./matlab)
+5. [Chapter 5:图与网络](./matlab)
  ## Contributing
  If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions, suggestions, and improvements are always welcome!
  ## 致谢
