@@ -1,0 +1,209 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{amsmath,amssymb,epsf,epsfig,times}
+\usepackage{multicol}
+\usepackage[all]{xy}
+\usepackage{color}
+\usepackage{ctex}
+\usepackage{subfigure}
+\usepackage{url,cite}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{pdfpages}
+
+%\usepackage{caption}
+%
+%\usepackage[font=small,labelfont=bf,labelsep=none]{caption}
+\usepackage[font=default,labelfont=bf,labelsep=period]{caption}
+
+\usepackage{makecell}
+\usepackage{booktabs} %引入三线表
+\usepackage{diagbox}
+\usepackage{multirow}
+
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{ulem}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\usepackage{enumerate}
+\lstset{
+    basicstyle          =   \sffamily,          % 基本代码风格
+    keywordstyle        =   \bfseries,          % 关键字风格
+    commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+    stringstyle         =   \ttfamily,  % 字符串风格
+    flexiblecolumns,                % 别问为什么，加上这个
+    numbers             =   left,   % 行号的位置在左边
+    showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+    numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+    frame               =   lrtb,   % 显示边框
+}
+\lstdefinestyle{Python}{
+    language        =   Python, % 语言选Python
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\def\proof{\noindent{\it Proof: }}
+\def\QED{\mbox{\rule[0pt]{1.5ex}{1.5ex}}}
+\def\endproof{\hspace*{\fill}~\QED\par\endtrivlist\unskip}
+\newcommand{\re}{\mathbb{R}}
+\def\sV{\mathcal{V}}
+\def\sS{\mathcal{S}}
+\def\sQ{\mathcal{Q}}
+
+\newcommand{\mc}{\mbox{: }}
+
+\newcommand{\normsq}[1]{\left\|#1\right\|^2}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+%\newcommand{\sgn}[1]{\mbox{sgn}(#1)}
+\newcommand{\pde}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\fundef}[3]{#1:#2\to #3}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\mymatrix}[2]{\left(\begin{array}{#1}#2\end{array}\right)}
+\newcommand{\defeq}{\stackrel{\triangle}{=}}
+\newcommand{\paren}[1]{\left(#1\right)}
+%\theoremstyle{plain} \newtheorem{theorem}{Theorem}
+%\theoremstyle{plain} \newtheorem{algorithm}{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+%\theoremstyle{plain}\newtheorem{lemma}{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newcommand{\Acal}{\mathcal{A}}
+\newcommand{\Bcal}{\mathcal{B}}
+\newcommand{\Ccal}{\mathcal{C}}
+\newcommand{\Dcal}{\mathcal{D}}
+\newcommand{\Ecal}{\mathcal{E}}
+\newcommand{\Fcal}{\mathcal{F}}
+\newcommand{\Gcal}{\mathcal{G}}
+\newcommand{\Hcal}{\mathcal{H}}
+\newcommand{\Ical}{\mathcal{I}}
+\newcommand{\Jcal}{\mathcal{J}}
+\newcommand{\Kcal}{\mathcal{K}}
+\newcommand{\Lcal}{\mathcal{L}}
+\newcommand{\Mcal}{\mathcal{M}}
+\newcommand{\Ncal}{\mathcal{N}}
+\newcommand{\Ocal}{\mathcal{O}}
+\newcommand{\Pcal}{\mathcal{P}}
+\newcommand{\Qcal}{\mathcal{Q}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\Scal}{\mathcal{S}}
+\newcommand{\Tcal}{\mathcal{T}}
+\newcommand{\Ucal}{\mathcal{U}}
+\newcommand{\Vcal}{\mathcal{V}}
+\newcommand{\Wcal}{\mathcal{W}}
+\newcommand{\Xcal}{\mathcal{X}}
+\newcommand{\Ycal}{\mathcal{Y}}
+\newcommand{\Zcal}{\mathcal{Z}}
+
+
+\def\omegavec{\boldsymbol{\omega}}
+\newcommand{\alphabf}{\boldsymbol{\alpha}}
+\newcommand{\omegabf}{\boldsymbol{\omega}}
+\def\omegavec{\boldsymbol{\omega}}
+\newcommand{\taubf}{\boldsymbol{\tau}}
+\newcommand{\qbf}{\mathbf{q}}
+\newcommand{\ybf}{\mathbf{y}}
+\newcommand{\pbf}{\mathbf{p}}
+\newcommand{\rbf}{\mathbf{r}}
+\newcommand{\ebf}{\mathbf{e}}
+\newcommand{\onebf}{\mathbf{1}}
+\newcommand{\zerobf}{\mathbf{0}}
+\newcommand{\abf}{\mathbf{a}}
+\newcommand{\ibf}{\mathbf{i}}
+\newcommand{\jbf}{\mathbf{j}}
+\newcommand{\kbf}{\mathbf{k}}
+\newcommand{\vbf}{\mathbf{v}}
+\newcommand{\wbf}{\mathbf{\omega}}
+\newcommand{\fbf}{\mathbf{f}}
+\newcommand{\zbf}{\mathbf{z}}
+\newcommand{\xbf}{\mathbf{x}}
+\newcommand{\dbf}{\mathbf{d}}
+\newcommand{\Rbf}{\mathbf{R}}
+\newcommand{\Tbf}{\mathbf{T}}
+
+\newcommand{\Cbf}{\mathbf{C}}
+\newcommand{\Ibf}{\mathbf{I}}
+\newcommand{\Pbf}{\mathbf{P}}
+\newcommand{\Qbf}{\mathbf{Q}}
+\newcommand{\Vbf}{\mathbf{V}}
+\newcommand{\Jbf}{\mathbf{J}}
+\newcommand{\Xbf}{\mathbf{X}}
+\newcommand{\Abf}{\mathbf{A}}
+\newcommand{\Kbf}{\mathbf{K}}
+\newcommand{\Gammabf}{\boldsymbol{\Gamma}}
+\newcommand{\nubf}{\boldsymbol{\nu}}
+\newcommand{\xibf}{\boldsymbol{\xi}}
+\newcommand{\Xibf}{\boldsymbol{\Xi}}
+\newcommand{\Omegabf}{\boldsymbol{\Omega}}
+
+
+\newcommand{\ubf}{\mathbf{u}}
+
+\newcommand{\lth}{\ell{\text{th}}}
+\newcommand{\ith}{i{\text{th}}}
+\newcommand{\jth}{j{\text{th}}}
+\newcommand{\kth}{k{\text{th}}}
+\newcommand{\ip}[2]{\left<#1,~#2\right>}
+
+\newcommand{\OMIT}[1]{}
+\title{}
+\author{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textbf{关于$\lceil$\textcolor{red}{“动态规划”}$\rfloor$的matlab讲解}}
+\lhead{魔力铠甲}
+\rfoot{Page \thepage}
+\begin{document}
+
+
+\begin{itemize}
+    \item[1.] 直接给出解：$x_i,u_i$分别代表第i年投入的A,B两种产品的生产：
+        \\$x_1=1000,x_2=900,x_3=0,x_4=0,x_5=0$
+            \\$u_1=0,u_2=0,u_3=810,u_4=648,u_5=518.4$
+    \item[2.] 直接给出解($x_i=j$代表第i个人完成第j个工作)，代码见Homework2.m
+        \\解:$x_1=2,x_2=1,x_3=4,x_4=3$
+    \item[3.] 直接给出解($x_i=j$表示$E_i$种零件j个),代码详见Homework3.m
+        \\解:$x_1=1,x_2=1,x_3=3,maxvalue=1.2000$
+    \item[4.] 直接给出解($x_i,u_i$表示第i年剩余的机器数，应该投入生产A产品的个数)：
+        \\解$x_1=100,u_1=0,x_2=65,u_2=0,u_3=x_3=22.75,maxvalue=7676.25$
+    \item[5.] 直接给出方案：代码详见Homework5.m
+        \\    Steps of cross river is 11
+        \\		        此岸 \qquad\qquad \qquad\qquad\qquad\qquad\qquad                         彼岸
+        \\Step  1 is ( 3, 3) --\textgreater ( 3, 1) \qquad \qquad  \qquad      ( 0, 0) --\textgreater ( 0, 2)
+        \\Step  2 is ( 3, 1) --\textgreater ( 3, 2) \qquad \qquad  \qquad      ( 0, 2) --\textgreater ( 0, 1)
+        \\Step  3 is ( 3, 2) --\textgreater ( 3, 0) \qquad \qquad  \qquad      ( 0, 1) --\textgreater ( 0, 3)
+        \\Step  4 is ( 3, 0) --\textgreater ( 3, 1) \qquad \qquad  \qquad      ( 0, 3) --\textgreater ( 0, 2)
+        \\Step  5 is ( 3, 1) --\textgreater ( 1, 1) \qquad \qquad  \qquad      ( 0, 2) --\textgreater ( 2, 2)
+        \\Step  6 is ( 1, 1) --\textgreater ( 2, 2) \qquad \qquad  \qquad      ( 2, 2) --\textgreater ( 1, 1)
+        \\Step  7 is ( 2, 2) --\textgreater ( 0, 2) \qquad \qquad  \qquad      ( 1, 1) --\textgreater ( 3, 1)
+        \\Step  8 is ( 0, 2) --\textgreater ( 0, 3) \qquad \qquad  \qquad      ( 3, 1) --\textgreater ( 3, 0)
+        \\Step  9 is ( 0, 3) --\textgreater ( 0, 1) \qquad \qquad  \qquad      ( 3, 0) --\textgreater ( 3, 2)
+        \\Step 10 is ( 0, 1) --\textgreater ( 0, 2) \qquad \qquad  \qquad      ( 3, 2) --\textgreater ( 3, 1)
+        \\Step 11 is ( 0, 2) --\textgreater ( 0, 0) \qquad \qquad  \qquad      ( 3, 1) --\textgreater ( 3, 3)
+        \item[6.]最短的时间：43
+        \\最优的顺序：4 1 3 2 5 6
+\end{itemize}
+\end{document}

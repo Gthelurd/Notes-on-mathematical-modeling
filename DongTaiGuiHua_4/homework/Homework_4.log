@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.21)  4 AUG 2023 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.21)  4 AUG 2023 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**f:/VSC-code/matlab/DongTaiGuiHua_4/DongTaiGuiHua_4.tex
-(f:/VSC-code/matlab/DongTaiGuiHua_4/DongTaiGuiHua_4.tex
+**f:/VSC-code/matlab/DongTaiGuiHua_4/homework/Homework_4.tex
+(f:/VSC-code/matlab/DongTaiGuiHua_4/homework/Homework_4.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (d:/LATEX/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -850,8 +850,8 @@ File: UTF8.bdg 2021/10/16 4.8.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/LATEX/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) (./DongTaiGuiHua_4.aux)
-\openout1 = `DongTaiGuiHua_4.aux'.
+) (./Homework_4.aux)
+\openout1 = `Homework_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
 LaTeX Font Info:    ... okay on input line 179.
@@ -971,130 +971,35 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count362
-LaTeX Font Info:    Trying to load font information for C70+rm on input line 184.
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 183.
  (d:/LATEX/texlive/2022/texmf-dist/tex/latex/ctex/fd/c70rm.fd
 File: c70rm.fd 2021/12/12 v2.5.8 Chinese font definition (CTEX)
 )
-Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 184.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 210--229
-[] 
- []
-
-(d:/LATEX/texlive/2022/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
-File: ctex-zhmap-windows.tex 2021/12/12 v2.5.8 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
-{d:/LATEX/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
-
-]
-Overfull \hbox (11.29999pt too wide) in paragraph at lines 236--243
-[] 
- []
-
-(d:/LATEX/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 245.
- (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 246.
- (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 254.
- (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Trying to load font information for OML+phv on input line 261.
- (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/omlphv.fd
-File: omlphv.fd 
-)
-LaTeX Font Info:    Font shape `OML/phv/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 261.
- [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 294.
- (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (11.29999pt too wide) in paragraph at lines 300--304
-[] 
- []
-
-[3]
-<figure1.png, id=186, 707.64375pt x 245.91875pt>
-File: figure1.png Graphic file (type png)
-<use figure1.png>
-Package pdftex.def Info: figure1.png  used on input line 314.
-(pdftex.def)             Requested size: 339.99988pt x 200.00735pt.
- [4 <./figure1.png (PNG copy)>]
-Overfull \hbox (3.2976pt too wide) in paragraph at lines 369--370
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[5]
-LaTeX Font Info:    Trying to load font information for OML+ptm on input line 387.
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 183.
+LaTeX Font Info:    Trying to load font information for OML+ptm on input line 195.
  (d:/LATEX/texlive/2022/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
-LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 387.
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 195.
+ (d:/LATEX/texlive/2022/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
+File: ctex-zhmap-windows.tex 2021/12/12 v2.5.8 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+{d:/LATEX/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--394
-[]\C70/rm/m/n/9/67 	 \C70/rm/m/n/9/7f ^^V \C70/rm/m/n/9/53 ÷ \C70/rm/m/n/9/4e :\OT1/ptm/m/n/9 a,b,c,d,e\C70/rm/m/n/9/76 „ \C70/rm/m/n/9/4e ” \C70/rm/m/n/9/79 Í \C70/rm/m/n/9/91 Ñ \C70/rm/m/n/9/94 ö \C70/rm/m/n/9/72 i \C70/rm/m/n/9/54 Á|\C70/rm/m/n/9/ff ^^L| \C70/rm/m/n/9/5b ƒ \C70/rm/m/n/9/4e ì \C70/rm/m/n/9/76 „ \C70/rm/m/n/9/91 Í Ï \C70/rm/m/n/9/52 ^^F + \C70/rm/m/n/9/66 /\OT1/ptm/m/n/9 2,2,6,5,4,\C70/rm/m/n/9/5b ƒ \C70/rm/m/n/9/4e ì \C70/rm/m/n/9/76 „ \C70/rm/m/n/9/4e ÷ \C70/rm/m/n/9/50 < \C70/rm/m/n/9/52 ^^F +
- []
-
-
-Overfull \hbox (11.29999pt too wide) in paragraph at lines 391--395
-[] 
- []
-
-
-Overfull \hbox (27.59717pt too wide) in paragraph at lines 402--403
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
-[]\OT1/ptm/m/n/9 tutou20082008. \C70/rm/m/n/9/65 p \C70/rm/m/n/9/5b f \C70/rm/m/n/9/5e ú \C70/rm/m/n/9/6a !\OT1/ptm/m/n/9 98\C70/rm/m/n/9/76 „ \C70/rm/m/n/9/98 ˜\OT1/ptm/m/n/9 ,\C70/rm/m/n/9/62 ~ \C70/rm/m/n/9/9a Ø \C70/rm/m/n/9/62 K \C70/rm/m/n/9/63 ^^G \C70/rm/m/n/9/70 ¹\OT1/ptm/m/n/9 [M].$\OT1/pcr/m/n/9 https : / / blog . csdn . net /
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 498--499
-[]\C70/rm/m/n/9/98 Î \C70/rm/m/n/9/4e - \C70/rm/m/n/9/76 „ \C70/rm/m/n/9/4f Y \C70/rm/m/n/9/97 õ\OT1/ptm/m/n/9 .matlab \C70/rm/m/n/9/52 ¨ \C70/rm/m/n/9/60 ^^A \C70/rm/m/n/9/89 Ä \C70/rm/m/n/9/52 ^^R \C70/rm/m/n/9/76 „ \C70/rm/m/n/9/4e ^^@ \C70/rm/m/n/9/90 S \C70/rm/m/n/9/51 s \C70/rm/m/n/9/4e Ž \C70/rm/m/n/9/51 w \C70/rm/m/n/9/4f S \C70/rm/m/n/9/76 „ \C70/rm/m/n/9/5e ” \C70/rm/m/n/9/75 ( \C70/rm/m/n/9/5b ž \C70/rm/m/n/9/4f ‹ \C70/rm/m/n/9/76 „ \C70/rm/m/n/9/5c ^^O \C70/rm/m/n/9/98 ˜\OT1/ptm/m/n/9 [M].$\OT1/pcr/m/n/9 https : / /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
-[]\OT1/ptm/m/n/9 cokezkx.\C70/rm/m/n/9/65 p \C70/rm/m/n/9/5b f \C70/rm/m/n/9/5e ú \C70/rm/m/n/9/6a ! |\C70/rm/m/n/9/ff ^^H|\C70/rm/m/n/9/4e ^^@|\C70/rm/m/n/9/ff 	| \C70/rm/m/n/9/89 Ä \C70/rm/m/n/9/52 ^^R \C70/rm/m/n/9/95 î \C70/rm/m/n/9/98 ˜\OT1/ptm/m/n/9 [B].$\OT1/pcr/m/n/9 https : / / blog . csdn . net / cokezkx /
- []
-
-
-Underfull \hbox (badness 3780) in paragraph at lines 501--502
-[]\C70/rm/m/n/9/70 u \C70/rm/m/n/9/9b B \C70/rm/m/n/9/6b L \C70/rm/m/n/9/62 K \C70/rm/m/n/9/6c 4 \C70/rm/m/n/9/4e ‘ \C70/rm/m/n/9/59 )\OT1/ptm/m/n/9 .2.4\C70/rm/m/n/9/65 p \C70/rm/m/n/9/5b f \C70/rm/m/n/9/5e ú \C70/rm/m/n/9/6a ! \C70/rm/m/n/9/4e ^^N\OT1/ptm/m/n/9 MATLAB--\C70/rm/m/n/9/52 ¨ \C70/rm/m/n/9/60 ^^A \C70/rm/m/n/9/89 Ä \C70/rm/m/n/9/52 ^^R\OT1/ptm/m/n/9 [B].$\OT1/pcr/m/n/9 https : / / blog . csdn .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 503--504
-[]\C70/rm/m/n/9/7b ^^Y « \C70/rm/m/n/9/8b í \C70/rm/m/n/9/96 L\OT1/ptm/m/n/9 .\C70/rm/m/n/9/53 p \C70/rm/m/n/9/52 7 \C70/rm/m/n/9/53 ‚ \C70/rm/m/n/9/6d A \C70/rm/m/n/9/6c 4 \C70/rm/m/n/9/7e ¿ \C70/rm/m/n/9/95 î \C70/rm/m/n/9/98 ˜ |\C70/rm/m/n/9/ff ^^H|\OT1/ptm/m/n/9 c\C70/rm/m/n/9/5b ž \C70/rm/m/n/9/73 °|\C70/rm/m/n/9/ff 	| \OT1/ptm/m/n/9 [B].$\OT1/pcr/m/n/9 https : / / blog . csdn . net / qq _
- []
-
-[9]
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 520.
- [10] (./DongTaiGuiHua_4.aux) ) 
+] (./Homework_4.aux) ) 
 Here is how much of TeX's memory you used:
- 28026 strings out of 478268
- 502281 string characters out of 5847351
- 1016569 words of memory out of 5000000
- 45350 multiletter control sequences out of 15000+600000
- 542673 words of font info for 266 fonts, out of 8000000 for 9000
+ 25797 strings out of 478268
+ 475234 string characters out of 5847351
+ 791321 words of memory out of 5000000
+ 43361 multiletter control sequences out of 15000+600000
+ 488951 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,16n,91p,3279b,2475s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>{d:/LATEX/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on DongTaiGuiHua_4.pdf (10 pages, 690618 bytes).
+ 88i,11n,91p,3283b,350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>{d:/LATEX/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/LATEX/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on Homework_4.pdf (1 page, 233583 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

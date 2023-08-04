@@ -173,7 +173,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\chead{\textbf{关于$\lceil$\textcolor{red}{“非线性规划”}$\rfloor$的matlab讲解}}
+\chead{\textbf{关于$\lceil$\textcolor{red}{“动态规划”}$\rfloor$的matlab讲解}}
 \lhead{魔力铠甲}
 \rfoot{Page \thepage}
 \begin{document}
@@ -296,7 +296,7 @@ disp(strcat('maxvalue is ',num2str(maxprofit)))
 %The maxvalue is 19733.8
     \end{lstlisting}
 \end{center}
-2.~最短路径寻找示例2：
+\par 2.~最短路径寻找示例2：
 \par \noindent \fbox{
     \parbox{\textwidth}{
         下图是一个线路网， 连线上的数字表示两点之间的距离（或费用）。试寻求一条由 A到G 距离最短（或费用最省）的路线。      }
@@ -387,6 +387,54 @@ end
 %One of the shortest is 18,A->B1->C2->D1->E2->F2->G
     \end{lstlisting}
 \end{center}
+\par 3.~背包问题规划示例3：
+\par \noindent \fbox{
+    \parbox{\textwidth}{
+        有编号为a,b,c,d,e的五种金银物品，它们的重量分别是2,2,6,5,4,它们的价值分别为6,3,5,4,6,现有一个承重为10的背包，如何让背包带走金银物品的价值总和最大？      }
+}
+\par \noindent \textbf{解：}
+\begin{center}
+    \begin{lstlisting}[caption={Example3},language=Matlab]
+        % This is Example3.m
+
+clear,clc 
+a = [1 2 3 4 5;    
+% The first row represents the type of gold and silver, used to represent the system's state 
+     2 2 6 5 4;     
+% The second row represents the weight of gold and silver 
+     6 3 5 4 6];    
+% The third row represents the value of gold and silver 
+ 
+b = perms(a(1, :)); 
+v = []; 
+for i = 1:size(a,2)-1 
+    c = b; 
+    id1 = find(c <= i); 
+    id2 = find(c >  i); 
+    c(id1) = 0; 
+    c(id2) = 1; 
+    c = unique(c,'rows'); 
+    v = [v; c];    				
+% Use 0 and 1 variables to represent the decision of the kth state 
+end 
+v = [ones(1,5); v; zeros(1,5)]; 
+% All states of all stages are stored in v 
+  
+F = []; 
+for i = 1:size(v,1) 
+    if (a(2,:) * v(i,:)') <= 10 
+% Constraint condition (within the weight range of the backpack) 
+        f = (a(3,:) * v(i,:)'); 
+% Stage indicator 
+        F = [F, f];            
+% Objective function 
+    end 
+end 
+best_value = max(F)            
+% Optimal value of the objective function
+% best_value=15
+    \end{lstlisting}
+\end{center}
 \section{动态规划-代码实现}
 \begin{center}
     \begin{lstlisting}[caption={Example},language=Matlab]
@@ -450,7 +498,9 @@ end
     \bibitem{ref4}风中的余韵.matlab 动态规划的一道关于具体的应用实例的小题[M].\url{https://blog.csdn.net/Zhangxy555/article/details/126024099},2022-07-27.
     \bibitem{ref5}请缨提旅 .matlab数学建模工具箱，国赛必备[L].\url{https://www.ilovematlab.cn/thread-259600-1-1.html?_dsign=77f9daf3},2013-8-19.
     \bibitem{ref6}cokezkx.数学建模（一）规划问题[B].\url{https://blog.csdn.net/cokezkx/article/details/97778450}, 2019-07-30.
-
+    \bibitem{ref7}灵魂歌手水云天.2.4数学建模与MATLAB--动态规划[B].\url{https://blog.csdn.net/weixin_44765473/article/details/107755895}, 2020-08-03.
+    \bibitem{ref8}此时那刻.数学建模实际问题(2)---商人安全过河[B].\url{https://zhuanlan.zhihu.com/p/584270213},2022-11-17.
+    \bibitem{ref9}笙箫语陌.印刷厂流水线问题（c实现）[B].\url{https://blog.csdn.net/qq_57437175/article/details/124367409},2022-04-23.
 \end{thebibliography}
 \newpage
 \section{数学建模算法大全第四章习题答案}
@@ -458,6 +508,27 @@ end
     \item[1.] 直接给出解：$x_i,u_i$分别代表第i年投入的A,B两种产品的生产：
         \\$x_1=1000,x_2=900,x_3=0,x_4=0,x_5=0$
             \\$u_1=0,u_2=0,u_3=810,u_4=648,u_5=518.4$
-    \item[2.]
+    \item[2.] 直接给出解($x_i=j$代表第i个人完成第j个工作)，代码见Homework2.m
+        \\解:$x_1=2,x_2=1,x_3=4,x_4=3$
+    \item[3.] 直接给出解($x_i=j$表示$E_i$种零件j个),代码详见Homework3.m
+        \\解:$x_1=1,x_2=1,x_3=3,maxvalue=1.2000$
+    \item[4.] 直接给出解($x_i,u_i$表示第i年剩余的机器数，应该投入生产A产品的个数)：
+        \\解$x_1=100,u_1=0,x_2=65,u_2=0,u_3=x_3=22.75,maxvalue=7676.25$
+    \item[5.] 直接给出方案：代码详见Homework5.m
+        \\    Steps of cross river is 11
+        \\		        此岸 \qquad\qquad \qquad\qquad\qquad\qquad\qquad                         彼岸
+        \\Step  1 is ( 3, 3) --\textgreater ( 3, 1) \qquad \qquad  \qquad      ( 0, 0) --\textgreater ( 0, 2)
+        \\Step  2 is ( 3, 1) --\textgreater ( 3, 2) \qquad \qquad  \qquad      ( 0, 2) --\textgreater ( 0, 1)
+        \\Step  3 is ( 3, 2) --\textgreater ( 3, 0) \qquad \qquad  \qquad      ( 0, 1) --\textgreater ( 0, 3)
+        \\Step  4 is ( 3, 0) --\textgreater ( 3, 1) \qquad \qquad  \qquad      ( 0, 3) --\textgreater ( 0, 2)
+        \\Step  5 is ( 3, 1) --\textgreater ( 1, 1) \qquad \qquad  \qquad      ( 0, 2) --\textgreater ( 2, 2)
+        \\Step  6 is ( 1, 1) --\textgreater ( 2, 2) \qquad \qquad  \qquad      ( 2, 2) --\textgreater ( 1, 1)
+        \\Step  7 is ( 2, 2) --\textgreater ( 0, 2) \qquad \qquad  \qquad      ( 1, 1) --\textgreater ( 3, 1)
+        \\Step  8 is ( 0, 2) --\textgreater ( 0, 3) \qquad \qquad  \qquad      ( 3, 1) --\textgreater ( 3, 0)
+        \\Step  9 is ( 0, 3) --\textgreater ( 0, 1) \qquad \qquad  \qquad      ( 3, 0) --\textgreater ( 3, 2)
+        \\Step 10 is ( 0, 1) --\textgreater ( 0, 2) \qquad \qquad  \qquad      ( 3, 2) --\textgreater ( 3, 1)
+        \\Step 11 is ( 0, 2) --\textgreater ( 0, 0) \qquad \qquad  \qquad      ( 3, 1) --\textgreater ( 3, 3)
+    \item[6.]最短的时间：43
+    \\最优的顺序：4 1 3 2 5 6
 \end{itemize}
 \end{document}
